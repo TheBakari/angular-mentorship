@@ -17,6 +17,9 @@ export class AppComponent implements OnInit {
 
     const arrCand: Array<{ id: number; firstName: string }> = [
       { id: 1, firstName: 'Jovana' },
+      { id: 2, firstName: 'Marko' },
+      { id: 3, firstName: 'Milica' },
     ];
+    console.log(arrCand);
   }
 }
