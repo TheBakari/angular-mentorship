@@ -35,6 +35,14 @@ export class AppComponent implements OnInit {
         birthday: '19-03-1993',
       },
     ];
-    console.log(arrCand);
+    //console.log(arrCand);
+
+    function disp() {
+      return arrCand;
+    }
+    let display = disp();
+    for (let i in display) {
+      console.log(display[i]);
+    }
   }
 }
