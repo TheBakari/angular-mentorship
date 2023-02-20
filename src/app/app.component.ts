@@ -12,13 +12,28 @@ export class AppComponent implements OnInit {
     const candidate = new Candidate(1, 'Marko', 'Markovic', '20-5-1993');
     const candidate2 = new Candidate(2, 'Nikola', 'Nikolic', '19-04-1992');
 
-    console.log(candidate);
-    console.log(candidate2);
+    // console.log(candidate);
+    // console.log(candidate2);
 
-    const arrCand: Array<{ id: number; firstName: string }> = [
-      { id: 1, firstName: 'Jovana' },
-      { id: 2, firstName: 'Marko' },
-      { id: 3, firstName: 'Milica' },
+    const arrCand: Candidate[] = [
+      {
+        id: 1,
+        firstName: 'Jovana',
+        lastName: 'Jovanovic',
+        birthday: '19-03-1993',
+      },
+      {
+        id: 1,
+        firstName: 'Mila',
+        lastName: 'Milovanovic',
+        birthday: '19-03-1993',
+      },
+      {
+        id: 1,
+        firstName: 'Matija',
+        lastName: 'Jovanovic',
+        birthday: '19-03-1993',
+      },
     ];
     console.log(arrCand);
   }
